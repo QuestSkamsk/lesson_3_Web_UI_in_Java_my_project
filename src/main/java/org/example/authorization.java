@@ -30,7 +30,7 @@ public class authorization {
 
         driver.get("https://meatfish.cafe");
         WebElement buttonEntrance = driver.findElement(By.xpath("//*[@id=\"header-container\"]/div[1]/div[5]/button")); //найти кнопку войти
-        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(buttonEntrance)); //ожидание поялвения элемента
+        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(buttonEntrance)); //ожидание появления элемента
         buttonEntrance.click(); //кликнуть по кнопке входа
 
         WebElement typePhone = driver.findElement(By.xpath("//*[@placeholder=\"+7\"]")); //найти поле телефон
@@ -42,7 +42,7 @@ public class authorization {
         typePassword.sendKeys("qwe12345"); //ввести в поле пароль
 
         WebElement buttonEntrance1= driver.findElement(By.xpath("//*[@class=\"btn-primary btn-block mb-3\"]")); //найти кнопку войти
-        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(buttonEntrance1)); //ожидание поялвения элемента
+        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(buttonEntrance1)); //ожидание появления элемента
         buttonEntrance1.click(); //кликнуть по кнопке входа
 
 

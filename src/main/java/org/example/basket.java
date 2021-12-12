@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
-//Проверка, что заказ добавляется в карзиру.
+//Проверка, что заказ добавляется в корзину.
 
 public class basket {
     public static void main(String[] args) {
@@ -30,44 +30,44 @@ public class basket {
 
         driver.get("https://meatfish.cafe");
         WebElement buttonEntrance = driver.findElement(By.xpath("//*[@id=\"header-container\"]/div[1]/div[5]/button")); //найти кнопку войти
-        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(buttonEntrance)); //ожидание поялвения элемента
+        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(buttonEntrance)); //ожидание появления элемента
         buttonEntrance.click(); //кликнуть по кнопке входа
 
         WebElement typePhone = driver.findElement(By.xpath("//*[@placeholder=\"+7\"]")); //найти поле телефон
         typePhone.click(); //кликнуть на поле телефон
-        typePhone.sendKeys("9046415872"); //ввести в поле телеон
+        typePhone.sendKeys("9046415872"); //ввести в поле телефон
 
         WebElement typePassword = driver.findElement(By.xpath("//*[@type=\"password\"]")); //найти поле пароль
         typePassword.click(); //кликнуть на поле пароль
         typePassword.sendKeys("qwe12345"); //ввести в поле пароль
 
         WebElement buttonEntrance1 = driver.findElement(By.xpath("//*[@class=\"btn-primary btn-block mb-3\"]")); //найти кнопку войти
-        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(buttonEntrance1)); //ожидание поялвения элемента
+        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(buttonEntrance1)); //ожидание появления элемента
         buttonEntrance1.click(); //кликнуть по кнопке входа
 
         WebElement buttonClose = driver.findElement(By.xpath("//*[@class=\"btn-close\"]")); //найти кнопку закрыть
-        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(buttonClose)); //ожидание поялвения элемента
+        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(buttonClose)); //ожидание появления элемента
         buttonClose.click(); //кликнуть по кнопке закрыть
 
         WebElement pizza = driver.findElement(By.xpath("//*[@id=\"__layout\"]/div/div/header/nav[2]/div/div/div[1]/div/ul/li[3]/a")); //найти ссылку пицца
-        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(pizza)); //ожидание поялвения элемента
+        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(pizza)); //ожидание появления элемента
         pizza.click(); //кликнуть по ссылке пицца
 
         WebElement pizzaMargarita = driver.findElement(By.xpath("//*[@href=\"/product/101784631\"]")); //найти ссылку на маргариту
-        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(pizzaMargarita)); //ожидание поялвения элемента
+        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(pizzaMargarita)); //ожидание появления элемента
         pizzaMargarita.click(); //кликнуть по ссылке на маргариту
 
         WebElement addToCart = driver.findElement(By.xpath("//*[@class=\"btn-add px-5\"]")); //найти кнопку в корзину
-        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(addToCart)); //ожидание поялвения элемента
+        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(addToCart)); //ожидание появления элемента
         addToCart.click(); //кликнуть по кнопке в корзину
 
         WebElement basket = driver.findElement(By.xpath("//*[@class=\"basket\"]")); //найти кнопку корзина
-        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(basket)); //ожидание поялвения элемента
+        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(basket)); //ожидание появления элемента
         basket.click(); //кликнуть по корзине
         new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"__layout\"]/div/div/main/div[3]/div/div[1]/div/div/div[1]/div/div[2]/div[1]"))); //в корзине пицца маргарита
 
 
-        //driver.quit(); //закрыть
+        driver.quit(); //закрыть
     }
 }
 
