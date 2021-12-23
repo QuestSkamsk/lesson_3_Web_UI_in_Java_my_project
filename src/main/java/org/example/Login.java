@@ -9,6 +9,13 @@ import org.openqa.selenium.support.FindBy;
 
 public class Login extends AbstractPage {
 
+    /*@FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div/div/div[6]/div/form/div[1]/div/input")
+    private WebElement email;
+    @FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div/div/div[6]/div/form/div[2]/div/input")
+    private WebElement Password;
+    @FindBy(xpath = "/html/body/div[2]/div/div/div[2]/div/div/div[6]/div/form/div[3]/input")
+    private WebElement submit1;*/
+
 
     @FindBy(xpath = "//*[@id=\"auth_login\"]")
     private WebElement inputLogin;
@@ -16,7 +23,7 @@ public class Login extends AbstractPage {
     @FindBy(xpath = "//*[@id=\"auth_password\"]")
     private WebElement inputPassword;
 
-    @FindBy(xpath = "//*[@type=\"submit\"]")
+    @FindBy(xpath = "//*[@id=\"app\"]/div[2]/div[3]/div/div/div[2]/div/form/button")
     private WebElement submit;
 
     public Login(WebDriver driver) {
@@ -24,9 +31,9 @@ public class Login extends AbstractPage {
     }
 
 
-    public void loginIn(String login, String password){
-       Actions loginIn = new Actions(getDriver());
+    public void loginIn(String login, String password) {
+        Actions loginIn = new Actions(getDriver());
         loginIn.sendKeys(this.inputLogin, login).click(this.inputPassword).sendKeys(password).click(submit).build().perform();
-}
+    }
 }
 

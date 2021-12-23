@@ -42,6 +42,7 @@ public class MainPage extends AbstractPage {
 
     public void buttonMenu() {
         buttonMenu.click();
-        new WebDriverWait(getDriver(), Duration.ofSeconds(30)).until(ExpectedConditions.visibilityOf(buttonMenu));
+
     }
+
 }
