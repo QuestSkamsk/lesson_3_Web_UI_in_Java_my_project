@@ -1,1 +1,5 @@
-org/example/AppTest.class
+org/example/ThemeDayTest.class
+org/example/LoginTest.class
+org/example/TownTest.class
+org/example/RubricsTest.class
+org/example/AbstractTest.class

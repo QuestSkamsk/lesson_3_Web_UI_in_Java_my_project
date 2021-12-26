@@ -1,0 +1,1 @@
+{"uuid":"93104700-cb8d-43d9-8d2a-019fcac32bb4","name":"rubricsTest()","children":["7575e256-af43-4d36-a992-60e9ad1011a4"],"befores":[{"name":"initMainPage","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1640524740234,"stop":1640524753589}],"afters":[],"start":1640524740076,"stop":1640524763083}

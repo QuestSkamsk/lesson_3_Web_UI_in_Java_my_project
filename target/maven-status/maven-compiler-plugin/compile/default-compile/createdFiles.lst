@@ -1,2 +1,5 @@
-org/example/authorization.class
-org/example/basket.class
+org/example/MenuPage.class
+org/example/AbstractPage.class
+org/example/MainPage.class
+org/example/Login.class
+org/example/AllNewsPage.class

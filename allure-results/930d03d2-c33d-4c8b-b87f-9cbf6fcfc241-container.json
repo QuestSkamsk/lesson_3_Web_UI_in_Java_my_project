@@ -1,0 +1,1 @@
+{"uuid":"930d03d2-c33d-4c8b-b87f-9cbf6fcfc241","name":"clickThemeDay()","children":["d90002e1-3d05-48e2-b508-ce8d125f0d0d"],"befores":[{"name":"initMainPage","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1640524786934,"stop":1640524801940}],"afters":[],"start":1640524786927,"stop":1640524824385}

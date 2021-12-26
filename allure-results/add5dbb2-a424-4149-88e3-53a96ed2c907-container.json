@@ -1,0 +1,1 @@
+{"uuid":"add5dbb2-a424-4149-88e3-53a96ed2c907","name":"TownTest()","children":["b9f4b867-528d-4679-b373-9e4b0105634b"],"befores":[{"name":"initMainPage","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1640524716050,"stop":1640524730141}],"afters":[],"start":1640524716018,"stop":1640524738563}

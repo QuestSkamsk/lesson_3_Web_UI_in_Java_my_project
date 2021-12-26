@@ -1,12 +1,15 @@
 package org.example;
 
+import io.qameta.allure.Epic;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 
 
 public class LoginTest extends AbstractTest {
 
+
     @Test
+    @Epic("Авторизация")
     void LoginTest(){
         new MainPage(getWebDriver()).buttonEnter();
         Assertions.assertTrue(webDriver.findElement(By.xpath("//*[@id=\"auth_login\"]")).getText().equals(""));
